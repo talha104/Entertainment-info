@@ -1,0 +1,1269 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pa",
+				"padding\tproperty"
+			],
+			[
+				"get",
+				"getSearch"
+			],
+			[
+				"cl",
+				"clicked"
+			],
+			[
+				"margin",
+				"margin-top\tproperty"
+			],
+			[
+				"mar",
+				"margin-top\tproperty"
+			],
+			[
+				"text-de",
+				"text-decoration\tproperty"
+			],
+			[
+				"over",
+				"overflow-y\tproperty"
+			],
+			[
+				"Movi",
+				"MovieDesc"
+			],
+			[
+				"re",
+				"response"
+			],
+			[
+				"simi",
+				"similar"
+			],
+			[
+				"simil",
+				"similarData"
+			],
+			[
+				"use",
+				"useEffect"
+			],
+			[
+				"setS",
+				"setSimilar"
+			],
+			[
+				"set",
+				"setSimilar"
+			],
+			[
+				"sim",
+				"similarLoading"
+			],
+			[
+				"l",
+				"loading"
+			],
+			[
+				"ov",
+				"overflow-x\tproperty"
+			],
+			[
+				"ma",
+				"margin-top\tproperty"
+			],
+			[
+				"ove",
+				"overflow-wrap\tproperty"
+			],
+			[
+				"fle",
+				"flex-wrap\tproperty"
+			],
+			[
+				"marg",
+				"margin-right\tproperty"
+			],
+			[
+				"d",
+				"div"
+			],
+			[
+				"s",
+				"similar"
+			],
+			[
+				"res",
+				"results"
+			],
+			[
+				"bor",
+				"border-radius\tproperty"
+			],
+			[
+				"border-r",
+				"border-radius\tproperty"
+			],
+			[
+				"sp",
+				"space-around\tjustify-content"
+			],
+			[
+				"ba",
+				"background\tproperty"
+			],
+			[
+				"r",
+				"right\tproperty"
+			],
+			[
+				"pad",
+				"padding-bottom\tproperty"
+			],
+			[
+				"a",
+				"auto\tmargin"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"le",
+				"left\tproperty"
+			],
+			[
+				"tex",
+				"text-align\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"ali",
+				"align-self\tproperty"
+			],
+			[
+				"inl",
+				"inline-flex\tdisplay"
+			],
+			[
+				"trans",
+				"transition\tproperty"
+			],
+			[
+				"padd",
+				"padding\tproperty"
+			],
+			[
+				"transition-d",
+				"transition-duration\tproperty"
+			],
+			[
+				"anima",
+				"animation-duration\tproperty"
+			],
+			[
+				"M",
+				"Movies"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"fon",
+				"font-weight\tproperty"
+			],
+			[
+				"fo",
+				"font-weight\tproperty"
+			],
+			[
+				"c",
+				"cursor"
+			],
+			[
+				"flex",
+				"flex-direction\tproperty"
+			],
+			[
+				"al",
+				"align-items\tproperty"
+			],
+			[
+				"inlin",
+				"inline-flex\tdisplay"
+			],
+			[
+				"spa",
+				"space-between\tjustify-content"
+			],
+			[
+				"R",
+				"Route"
+			],
+			[
+				"B",
+				"BrowserRouter"
+			],
+			[
+				"page",
+				"pageNumber"
+			],
+			[
+				"pag",
+				"pageNumber"
+			],
+			[
+				"wr",
+				"overflow-wrap\tproperty"
+			],
+			[
+				"FON",
+				"font-size\tproperty"
+			],
+			[
+				"li",
+				"lighter\tfont-weight"
+			],
+			[
+				"gri",
+				"grid-column\tproperty"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"padi",
+				"padding-top\tproperty"
+			],
+			[
+				"paddin",
+				"padding-top\tproperty"
+			],
+			[
+				"font",
+				"font-weight\tproperty"
+			],
+			[
+				"grid-",
+				"grid-column-gap\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"grid-temp",
+				"grid-template-rows\tproperty"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"grid-templa",
+				"grid-template-columns\tproperty"
+			],
+			[
+				"bac",
+				"background-color\tproperty"
+			],
+			[
+				"paddi",
+				"padding-left\tproperty"
+			],
+			[
+				"inline",
+				"inline-grid\tdisplay"
+			],
+			[
+				"Movie",
+				"MoviesList"
+			],
+			[
+				"in",
+				"inline-block\tdisplay"
+			],
+			[
+				"Stop",
+				"Stopwatch"
+			],
+			[
+				"h",
+				"h1"
+			],
+			[
+				"pla",
+				"Player"
+			],
+			[
+				"han",
+				"handleTrue"
+			],
+			[
+				"ha",
+				"handleTrue"
+			],
+			[
+				"pre",
+				"prevState"
+			],
+			[
+				"handle",
+				"handleCrown"
+			],
+			[
+				"hand",
+				"handleReset"
+			],
+			[
+				"e",
+				"elapsedTime"
+			],
+			[
+				"pl",
+				"player"
+			],
+			[
+				"Pla",
+				"Player"
+			],
+			[
+				"min",
+				"min-width\tproperty"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"te",
+				"text-align\tproperty"
+			],
+			[
+				"b",
+				"background"
+			],
+			[
+				"v",
+				"video\tTag"
+			],
+			[
+				"tr",
+				"transition\tproperty"
+			],
+			[
+				"cele",
+				"celebrity"
+			],
+			[
+				"st",
+				"story"
+			],
+			[
+				"p",
+				"preventDefault"
+			],
+			[
+				"nav",
+				"navigation"
+			],
+			[
+				"text-",
+				"text-align\tproperty"
+			],
+			[
+				"padding",
+				"padding\tproperty"
+			],
+			[
+				"bl",
+				"black"
+			],
+			[
+				"margi",
+				"margin\tproperty"
+			],
+			[
+				"bol",
+				"bold\tfont-weight"
+			],
+			[
+				"di",
+				"display\tproperty"
+			],
+			[
+				"text-decoratio",
+				"text-decoration-style\tproperty"
+			],
+			[
+				"co",
+				"color\tproperty"
+			],
+			[
+				"C",
+				"confirm_password"
+			],
+			[
+				"Co",
+				"confirm_email"
+			],
+			[
+				"con",
+				"confirm_email"
+			],
+			[
+				"for",
+				"forms"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"Re",
+				"Register"
+			],
+			[
+				"conf",
+				"confirm_password"
+			],
+			[
+				"password",
+				"password"
+			],
+			[
+				"Reg",
+				"RegisterForm"
+			],
+			[
+				"dec",
+				"text-decoration\tproperty"
+			],
+			[
+				"im",
+				"background-image\tproperty"
+			],
+			[
+				"lis",
+				"list-style\tproperty"
+			],
+			[
+				"borde",
+				"border-spacing\tproperty"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			],
+			[
+				"i",
+				"initial\tposition"
+			],
+			[
+				"f",
+				"flex\tdisplay"
+			],
+			[
+				"m",
+				"margin\tproperty"
+			],
+			[
+				"border",
+				"border-top\tproperty"
+			],
+			[
+				"skew",
+				"skewY()\ttransform"
+			],
+			[
+				"border-le",
+				"border-top-left-radius\tproperty"
+			],
+			[
+				"top",
+				"border-top-right-radius\tproperty"
+			],
+			[
+				"ske",
+				"skewY()\ttransform"
+			],
+			[
+				"font-",
+				"font-size\tproperty"
+			],
+			[
+				"mrgin",
+				"margin-right\tproperty"
+			],
+			[
+				"fig",
+				"figcaption\tTag"
+			],
+			[
+				"fi",
+				"figure\tTag"
+			],
+			[
+				"he",
+				"header\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/Components/App.js",
+			"settings":
+			{
+				"buffer_size": 4104,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Components/MainTv.js",
+			"settings":
+			{
+				"buffer_size": 3068,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Components/Tv.js",
+			"settings":
+			{
+				"buffer_size": 498,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Components/TvDesc.js",
+			"settings":
+			{
+				"buffer_size": 858,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/App.css",
+			"settings":
+			{
+				"buffer_size": 4548,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/Components/TvCast.js",
+			"settings":
+			{
+				"buffer_size": 385,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Components/TvList.js",
+			"settings":
+			{
+				"buffer_size": 474,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Components/Movies.js",
+			"settings":
+			{
+				"buffer_size": 944,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Components/MovieDesc.js",
+			"settings":
+			{
+				"buffer_size": 770,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Components/MoviesList.js",
+			"settings":
+			{
+				"buffer_size": 841,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/requests.js",
+			"settings":
+			{
+				"buffer_size": 1409,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/Components/Pagination.js",
+			"settings":
+			{
+				"buffer_size": 411,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Mirza/React/movies",
+		"/C/Users/Mirza/React/movies/public",
+		"/C/Users/Mirza/React/movies/src",
+		"/C/Users/Mirza/React/movies/src/Components"
+	],
+	"file_history":
+	[
+		"/C/Users/Mirza/React/movies/src/Components/MainTv.js",
+		"/C/Users/Mirza/React/movies/src/App.css",
+		"/C/Users/Mirza/React/movies/src/Components/App.js",
+		"/C/Users/Mirza/React/movies/src/Components/Description.js",
+		"/C/Users/Mirza/React/movies/src/index.js",
+		"/C/Users/Mirza/React/movies/src/App.js",
+		"/C/Users/Mirza/React/recipe/src/Components/Counter.js",
+		"/C/Users/Mirza/React/recipe/src/Components/Stopwatch.js",
+		"/C/Users/Mirza/React/recipe/src/Components/AddPlayer.js",
+		"/C/Users/Mirza/React/recipe/src/App.js",
+		"/C/Users/Mirza/React/recipe/src/Components/Header.js",
+		"/C/Users/Mirza/React/recipe/src/index.css",
+		"/C/Users/Mirza/React/recipe/src/Components/Player.js",
+		"/C/Users/Mirza/React/recipe/src/Components/Icon.js",
+		"/C/Users/Mirza/React/recipe/src/App.css",
+		"/C/Users/Mirza/Desktop/4 - React Component Patterns/6 - The React Challenge/scoreboard_final/src/index.js",
+		"/C/Users/Mirza/Desktop/4 - React Component Patterns/6 - The React Challenge/scoreboard/src/components/App.js",
+		"/C/Users/Mirza/Desktop/4 - React Component Patterns/6 - The React Challenge/scoreboard/src/index.js",
+		"/C/Users/Mirza/React/recipe/src/Components/App.js",
+		"/C/Users/Mirza/React/recipe/public/index.html",
+		"/C/Users/Mirza/React/new.js",
+		"/C/Users/Mirza/React/first/src/index.js",
+		"/C/Users/Mirza/React/first/src/components/Todos.js",
+		"/C/Users/Mirza/React/first/src/App.css",
+		"/C/Users/Mirza/React/first/src/App.js",
+		"/C/Users/Mirza/React/first/public/index.html",
+		"/C/Users/Mirza/React/Project1/index.html",
+		"/C/Users/Mirza/React/Project1/app.js",
+		"/C/Users/Mirza/Dev/bunburry/src/static/css/home.css",
+		"/C/Users/Mirza/Dev/bunburry/src/templates/pages/menu.html",
+		"/C/Users/Mirza/Dev/bunburry/src/static/css/story.css",
+		"/C/Users/Mirza/Dev/bunburry/src/static/css/order.css",
+		"/C/Users/Mirza/Dev/bunburry/src/static/css/about.css",
+		"/C/Users/Mirza/Dev/bunburry/src/static/css/menu.css",
+		"/C/Users/Mirza/Dev/bunburry/src/static/css/celebrity.css",
+		"/C/Users/Mirza/Dev/bunburry/src/static/css/nav.css",
+		"/C/Users/Mirza/Dev/bunburry/src/templates/pages/home.html",
+		"/C/Users/Mirza/Dev/bunburry/src/templates/pages/story.html",
+		"/C/Users/Mirza/Dev/bunburry/src/templates/pages/celebrity.html",
+		"/C/Users/Mirza/Dev/bunburry/src/templates/nav.html",
+		"/C/Users/Mirza/Dev/bunburry/src/templates/footer.html",
+		"/C/Users/Mirza/Dev/bunburry/src/templates/pages/order.html",
+		"/C/Users/Mirza/Dev/bunburry/src/templates/pages/about.html",
+		"/C/Users/Mirza/Dev/netflix/src/accounts/forms.py",
+		"/C/Users/Mirza/Dev/netflix/src/accounts/models.py",
+		"/C/Users/Mirza/Dev/netflix/src/templates/pages/home.html",
+		"/C/Users/Mirza/Dev/netflix/src/static/css/registration.css",
+		"/C/Users/Mirza/Dev/netflix/src/templates/accounts/signup.html",
+		"/C/Users/Mirza/Dev/netflix/src/netflix/urls.py",
+		"/C/Users/Mirza/Dev/netflix/src/accounts/views.py",
+		"/C/Users/Mirza/Dev/netflix/src/accounts/admin.py",
+		"/C/Users/Mirza/Dev/netflix/src/pages/views.py",
+		"/C/Users/Mirza/Dev/netflix/src/pages/urls.py",
+		"/C/Users/Mirza/Dev/netflix/src/templates/base.html",
+		"/C/Users/Mirza/Dev/netflix/src/templates/nav.html",
+		"/C/Users/Mirza/Dev/netflix/src/netflix/settings.py",
+		"/C/Users/Mirza/Dev/netflix/src/accounts/urls.py",
+		"/C/Users/Mirza/Dev/netflix/src/static/style.css",
+		"/C/Users/Mirza/Dev/portfolio/src/templates/nav.html",
+		"/C/Users/Mirza/Dev/portfolio/src/static/css/style.css",
+		"/C/Users/Mirza/Dev/portfolio/src/templates/pages/home.html",
+		"/C/Users/Mirza/Dev/portfolio/src/templates/base.html",
+		"/C/Users/Mirza/Dev/portfolio/src/portfolio/urls.py",
+		"/C/Users/Mirza/Dev/portfolio/src/templates/pages/contact.html",
+		"/C/Users/Mirza/Dev/portfolio/src/templates/pages/about.html",
+		"/C/Users/Mirza/Dev/portfolio/src/templates/pages/portfolio.html",
+		"/C/Users/Mirza/Dev/portfolio/src/pages/views.py",
+		"/C/Users/Mirza/Dev/portfolio/src/portfolio/settings.py",
+		"/C/Users/Mirza/Dev/portfolio/src/static/images/instagram.png",
+		"/C/Users/Mirza/Downloads/icons8-menu-24.png",
+		"/C/Users/Mirza/Dev/portfolio/src/templates/static/style.css",
+		"/C/Users/Mirza/Dev/portfolio/src/templates/style.css",
+		"/C/Users/Mirza/Dev/portfolio/src/templates/css/style.css",
+		"/C/Users/Mirza/Dev/design/src/design/urls.py",
+		"/C/Users/Mirza/Dev/design/src/templates/bootstrap/style.css",
+		"/C/Users/Mirza/Dev/design/src/templates/bootstrap/index.html",
+		"/C/Users/Mirza/Dev/design/src/templates/bootstrap/example.html",
+		"/C/Users/Mirza/Dev/design/src/design/settings.py",
+		"/C/Users/Mirza/Dev/blog/src/templates/projects/project_delete.html",
+		"/C/Users/Mirza/Dev/blog/src/portfolio/urls.py",
+		"/C/Users/Mirza/Dev/blog/src/templates/projects/project_list.html",
+		"/C/Users/Mirza/Dev/blog/src/templates/projects/project_detail.html",
+		"/C/Users/Mirza/Dev/blog/src/projects/models.py",
+		"/C/Users/Mirza/Dev/blog/src/templates/projects/project_create.html",
+		"/C/Users/Mirza/Dev/blog/src/projects/views.py",
+		"/C/Users/Mirza/Dev/blog/src/projects/forms.py",
+		"/C/Users/Mirza/Dev/blog/src/templates/projects/project_delete",
+		"/C/Users/Mirza/Dev/blog/src/blog/urls.py",
+		"/C/Users/Mirza/Dev/newproject/src/products/urls.py",
+		"/C/Users/Mirza/Dev/newproject/src/newproject/urls.py",
+		"/C/Users/Mirza/Dev/newproject/src/products/views.py",
+		"/C/Users/Mirza/Dev/newproject/src/products/models.py",
+		"/C/Users/Mirza/Dev/newproject/src/newproject/settings.py",
+		"/C/Users/Mirza/Dev/newproject/src/templates/product/create.html",
+		"/C/Users/Mirza/Dev/newproject/src/templates/product/delete.html",
+		"/C/Users/Mirza/Dev/newproject/src/templates/product/detail.html",
+		"/C/Users/Mirza/Dev/newproject/src/templates/product/listing.html",
+		"/C/Users/Mirza/Dev/newproject/src/pages/views.py",
+		"/C/Users/Mirza/Dev/newproject/src/templates/about.html",
+		"/C/Users/Mirza/Dev/newproject/src/templates/home.html",
+		"/C/Users/Mirza/Dev/newproject/src/templates/base.html",
+		"/C/Users/Mirza/Dev/newproject/src/templates/nav.html",
+		"/C/Users/Mirza/Dev/newproject/src/products/forms.py",
+		"/C/Users/Mirza/Dev/newproject/src/templates/product/create.py",
+		"/C/Users/Mirza/Dev/newproject/src/products/forms",
+		"/C/Users/Mirza/Dev/newproject/src/products/admin.py",
+		"/C/Users/Mirza/Dev/newproject/src/db.sqlite3",
+		"/C/Users/Mirza/Dev/trydjango1-11/src/restaurants/templates/restaurantlocation_detail.html",
+		"/C/Users/Mirza/Dev/trydjango1-11/src/templates/restaurantlocation_detail.html",
+		"/C/Users/Mirza/Dev/trydjango1-11/src/restaurants/models.py",
+		"/C/Users/Mirza/Dev/trydjango1-11/src/muypicky/settings/base.py",
+		"/C/Users/Mirza/Dev/trydjango1-11/src/restaurants/admin.py",
+		"/C/Users/Mirza/Dev/trydjango1-11/src/templates/base.html",
+		"/C/Users/Mirza/Dev/trydjango1-11/src/templates/home.html",
+		"/C/Users/Mirza/Dev/trydjango1-11/src/templates/snippets/js.html",
+		"/C/Users/Mirza/Dev/trydjango1-11/src/templates/snippets/css.html",
+		"/C/Users/Mirza/Dev/trydjango1-11/src/muypicky/urls.py",
+		"/C/Users/Mirza/Dev/trydjango1-11/src/muypicky/settings/__init__.py",
+		"/C/Users/Mirza/Dev/trydjango1-11/src/restaurants/views.py",
+		"/C/Users/Mirza/Dev/trydjango1-11/src/muypicky/settings/local.py",
+		"/C/Users/Mirza/Dev/trydjango1-11/src/muypicky/settings/production.py",
+		"/C/Users/Mirza/Dev/cfehome/src/manage.py"
+	],
+	"find":
+	{
+		"height": 39.3333333333
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"props"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/Components/App.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4104,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3770,
+								3770
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1864.66666667,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/Components/MainTv.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3068,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2845,
+								2845
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 25.3333333333,
+						"translation.y": 1470.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/Components/Tv.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 498,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								498
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/Components/TvDesc.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 858,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								199,
+								278
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/App.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4548,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1101,
+								1101
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 954.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/Components/TvCast.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 385,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								124,
+								124
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/Components/TvList.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 474,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								79,
+								79
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/Components/Movies.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 944,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								101,
+								101
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 105.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/Components/MovieDesc.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 770,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								66,
+								66
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/Components/MoviesList.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 841,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								309,
+								309
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 261.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/requests.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1409,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								818,
+								818
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "src/Components/Pagination.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 411,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								180,
+								180
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 39.3333333333
+	},
+	"input":
+	{
+		"height": 39.3333333333
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "movies.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 130.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

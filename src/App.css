@@ -1,38 +1,481 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  background: black;
+}
+
+.wrapper {
+  display: flex;
+  flex-basis: 95%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header {
+  text-decoration: none;
+}
+
+header {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  background: linear-gradient(to right, rgb(255, 57, 1), rgb(249, 221, 52));
+  margin-bottom: -22px;
+}
+
+nav {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1.5px;
+  margin: auto 1%;
+  font-size: 17px;
+}
+
+.mainLite{
+  min-height: 570px;
+}
+
+.lite {
+  color: white;
+  margin-left: 10px;
+}
+
+.lite .description {
+  margin-top: 100px;
+  min-height: 1170px;
+  z-index: 1;
+  margin-left: -10px;
+}
+
+.trend {
+  margin-top: 40px;
+}
+
+.lwrapper{
+  display: flex;
+  overflow-y: hidden;
+}
+
+.lwrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.litem {
+  position: relative;
+  margin-right: 5px;
+  height: 195px;
+  transition: height 0.75s;
+}
+
+.litem:hover {
+  height: 225px;
+}
+
+.litem:hover .lposter{
+  width: 150px;
+}
+
+.lposter {
+  width: 120px;
+  transition: width 0.75s;
+}
+
+.ltitle {
+  margin-top: 50%;
+}
+
+.nwrapper{
+  display: flex;
+  overflow-y: hidden;
+}
+
+.nwrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.nitem {
+  position: relative;
+  margin-right: 5px;
+  height: 350px;
+  transition: height 0.75s;
+}
+
+.nitem:hover {
+  height: 390px;
+}
+
+.nitem:hover .nposter{
+  height: 390px;
+  width: 220px;
+}
+
+.nposter {
+  height: 350px;
+  width: 195px;
+  transition: all 0.75s;
+}
+
+.nrating-container {
+  overflow: hidden;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  transition: height 0.75s;
+  top:0;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: white;
+  font-size: 10px;
+}
+
+.nitem:hover .frating-container {
+  height: 100%;
+  transition: height 0.75s;
+}
+
+.ntitle {
+  margin-top: 50%;
+}
+
+.last {
+  margin-bottom: 50px;
+}
+
+.search {
+  width:25px;
+  margin-right: 12px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 80%;
+  margin: 22px auto 0px auto;
+  height: 40px;
+}
+
+.up {
+  display: none;
+}
+
+.down {
+  display: block;
+}
+
+.nav {
+  text-decoration: none;
+  color: red;
+  margin-right: 12px;
+}
+
+.nav:hover {
+  font-weight: bold;
+  color: red;
+}
+
+.above {
+  display: inline-flex;
+}
+
+.genres {
+  position: absolute;
+  z-index: 9;
+  display: grid;
+  margin: -55px auto auto 190px;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFF63B;
+  padding: 0px 10px 0px 10px;
+  border: #FFF63B solid 2px;
+  cursor: pointer;
+  background: rgb(255, 57, 1);
+  transition: background 0.75s;
+}
+
+.show {
+  margin-bottom: 5px;
+  padding: 5px;
+  margin-left: -5px;
+  color: #FFF63B;
+  text-decoration: none;
+  transition: color 0.3s;
+  transition: background 0.3s;
+}
+
+.show:hover {
+  background: #FFF63B;
+  color: rgb(255, 57, 1);
+}
+
+.hide {
+  display: none;
+}
+
+.header {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  margin-left: 20px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  color: #FFF63B;
+}
+
+.main {
+  background-color: black;
+  position: relative;
+  min-height: 411px;
+}
+
+.main h1 {
+  color: white;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  text-align: center;
+  padding: 10px;
+}
+
+.item {
+  color: white;
+  cursor: pointer;
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width:200px;
+  transition: width 0.75s;
+}
+
+.item:hover {
+  width: 230px;
+}
+
+.poster {
+  width: 200px;
+  transition: width 0.75s;
+}
+
+.item:hover .poster {
+  width: 230px;
+}
+
+.rating-container {
+  overflow: hidden;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  transition: height 0.75s;
+  top:0;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+.item:hover .rating-container {
+  height: 100%;
+  transition: height 0.75s;
+}
+
+.title {
+  margin-top: 60%;
+}
+
+.off {
+  display: none;
+}
+
+.on {
+  display: block;
+}
+
+.description {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  top:0;
+  padding-top: 20px;
+  height: 98%;
+}
+
+.dmain {
+  position: relative;
+  background: linear-gradient(to right, rgb(255, 57, 1), rgb(249, 221, 52));
+  color: white;
+  text-align: center;
+  width: 56%;
+  margin-left: 21%;
+  margin-top: 30px;
+  padding: 30px; 
+}
+
+.dtitle {
+  color: #E50914;
+}
+
+.dposter {
+  width: 200px;
+}
+
+.cross {
+  cursor: pointer;
+  width: 30px;
+  position: absolute;
+  right: 0;
+  top:0;
+  margin-top: 5px;
+  margin-right: 5px;
+  transition: width 0.5s;
+}
+
+.cross:hover {
+  width:35px;
+}
+
+.drating-container {
+  background: transparent;
+}
+
+.fwrapper{
+  display: flex;
+  overflow-y: hidden;
+}
+
+.fwrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.fitem {
+  position: relative;
+  margin-right: 5px;
+  height: 150px;
+  transition: height 0.75s;
+}
+
+.fitem:hover {
+  height: 170px;
+}
+
+.fitem:hover .fposter{
+  width: 120px;
+}
+
+.fposter {
+  width: 100px;
+  transition: width 0.75s;
+}
+
+.frating-container {
+  overflow: hidden;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  transition: height 0.75s;
+  top:0;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: white;
+  font-size: 10px;
+}
+
+.fitem:hover .frating-container {
+  height: 100%;
+  transition: height 0.75s;
+}
+
+.ftitle {
+  margin-top: 50%;
+}
+
+.cast {
+  display: flex;
+  overflow-y: hidden;
+  color: white;
+  font-size: 12px;
+}
+
+.cast::-webkit-scrollbar {
+  display: none;
+}
+
+.citem {
+  margin-right: 10px;
+  position: relative;
+  height: 150px;
+}
+
+.cposter {
+  width: 100px;
+  transition: width 0.75s;
+}
+
+.crating {
+  overflow: hidden;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  transition: height 0.75s;
+  top:0;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: white;
+  font-size: 10px;
+}
+
+.character {
+  margin-top: 50%;
+}
+
+.citem:hover .crating {
+  height: 100%;
+  transition: height 0.75s;
+}
+
+.citem:hover {
+  height: 170px;
+}
+
+.citem:hover .cposter{
+  width: 120px;
+}
+
+.sb {
+  text-align: center;
+  margin-top: 0px;
+}
+
+.pages {
+  padding-bottom: 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.pages button {
+  background-color: #1A0315;
   color: white;
+  cursor: pointer;
+  margin: 4px;
+  transition: background-color 0.5s;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.pages button:hover {
+  font-weight: bold;
+  border: rgb(249, 221, 52) solid 2px;
+  color: rgb(249, 221, 52);
+  background-color: rgb(255, 57, 1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+footer {
+  background: linear-gradient(to right, rgb(255, 57, 1), rgb(249, 221, 52));
+  color: #E50914;
+  display: grid;
+  grid-template-rows: 80px;
 }

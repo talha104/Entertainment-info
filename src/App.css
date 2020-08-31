@@ -182,7 +182,7 @@ nav {
   position: absolute;
   z-index: 9;
   display: grid;
-  margin: -55px auto auto 190px;
+  margin: -55px auto auto 220px;
   font-family: 'Montserrat', sans-serif;
   color: #FFF63B;
   padding: 0px 10px 0px 10px;
@@ -223,7 +223,7 @@ nav {
 .main {
   background-color: black;
   position: relative;
-  min-height: 411px;
+  min-height: 570px;
 }
 
 .main h1 {

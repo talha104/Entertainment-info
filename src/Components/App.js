@@ -180,7 +180,8 @@ class App extends React.Component {
     this.setState({
       clicked: !this.state.clicked,
       openMovie: false,
-      openTv: false
+      openTv: false,
+      search: []
     })
   }
 
@@ -210,7 +211,7 @@ class App extends React.Component {
         pages: response.data.total_pages,
         gcode: genres
       })
-      console.log(response.data)
+      console.log(this.state.genres)
     })
     .catch( err => {
       console.log("Error parsing and getting data", err)
@@ -223,107 +224,24 @@ class App extends React.Component {
       this.setState({
         genres: response.data.results
       })
+      console.log(this.state.genres)
     })
     .catch( err => {
         console.log("Error parsing and getting data", err)
       })
   }
 
-  action = () => {
-    this.getGenres(28)
-    return (
-      <div className="main">
-        <input type="text" placeholder="Search Movies" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
-        <div id="top">
-          <h1 className={this.state.clicked ? "up" : "down"} >Action Movies</h1>
-          <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
-        </div>
-        <h1 id="top" className={this.state.clicked ? "down" : "up"}>Search Result</h1>
-        <MoviesList main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup} similar={this.similar}/>
-        <MovieDesc open={this.state.openMovie} popup={this.popup} similar={this.similar} data={this.state.similar} selected={this.state.selected} toggle={this.toggle}/>
-        <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
-      </div>
-      );
+  getClosed = () => {
+    this.setState({
+      clicked: false,
+      search: []
+    })
   }
 
-  adventure = () => {
-    this.getGenres(12)
-    return (
-      <div className="main">
-        <input type="text" placeholder="Search Movies" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
-        <div id="top">
-          <h1 className={this.state.clicked ? "up" : "down"} >Adventure Movies</h1>
-          <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
-        </div>
-        <MoviesList main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup} similar={this.similar}/>
-        <MovieDesc open={this.state.openMovie} popup={this.popup} similar={this.similar} data={this.state.similar} selected={this.state.selected} toggle={this.toggle}/>
-        <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
-      </div>
-      );
-  }
-
-  comedy = () => {
-    this.getGenres(35)
-    return (
-      <div className="main">
-        <input type="text" placeholder="Search Movies" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
-        <div id="top">
-          <h1 className={this.state.clicked ? "up" : "down"} >Comedy Movies</h1>
-          <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
-        </div>
-        <MoviesList main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup} similar={this.similar}/>
-        <MovieDesc open={this.state.openMovie} popup={this.popup} similar={this.similar} data={this.state.similar} selected={this.state.selected} toggle={this.toggle}/>
-        <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
-      </div>
-      );
-  }
-
-  drama = () => {
-    this.getGenres(18)
-    return (
-      <div className="main">
-        <input type="text" placeholder="Search Movies" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
-        <div id="top">
-          <h1 className={this.state.clicked ? "up" : "down"} >Drama Movies</h1>
-          <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
-        </div>
-        <MoviesList main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup} similar={this.similar}/>
-        <MovieDesc open={this.state.openMovie} popup={this.popup} similar={this.similar} data={this.state.similar} selected={this.state.selected} toggle={this.toggle}/>
-        <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
-      </div>
-      );
-  }
-
-  family = () => {
-    this.getGenres(10751)
-    return (
-      <div className="main">
-        <input type="text" placeholder="Search Movies" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
-        <div id="top">
-          <h1 className={this.state.clicked ? "up" : "down"} >Family Movies</h1>
-          <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
-        </div>
-        <MoviesList main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup} similar={this.similar}/>
-        <MovieDesc open={this.state.openMovie} popup={this.popup} similar={this.similar} data={this.state.similar} selected={this.state.selected} toggle={this.toggle}/>
-        <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
-      </div>
-      );
-  }
-
-  romance = () => {
-    this.getGenres(10749)
-    return (
-      <div className="main">
-        <input type="text" placeholder="Search Movies" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
-        <div id="top">
-          <h1 className={this.state.clicked ? "up" : "down"} >Romantic Movies</h1>
-          <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
-        </div>
-        <MoviesList main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup} similar={this.similar}/>
-        <MovieDesc open={this.state.openMovie} popup={this.popup} similar={this.similar} data={this.state.similar} selected={this.state.selected} toggle={this.toggle}/>
-        <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
-      </div>
-      );
+  getSliced = (array, show1, main1, a) => {
+    var temparray,chunk = 12;
+    temparray = array.slice(a,a+chunk);
+    return <LandingList show={show1} main={main1} data={this.state.clicked ? this.state.search : temparray} popup={this.popup} similar={this.similar}/>
   }
 
   render() {
@@ -334,7 +252,7 @@ class App extends React.Component {
             <div>
               <header>
                 <div className="above">
-                  <Link to="/" className="header"><h1>ShowBiz</h1></Link>
+                  <Link to="/" className="header"><h1>FutureFlip</h1></Link>
                 </div>
                 <nav>
                   <Link to="/movies" className="nav" onClick={() => this.getmovies()} >Movies</Link> <Link to="/tv" className="nav">TV Shows</Link>
@@ -349,7 +267,11 @@ class App extends React.Component {
                     <h2 className={this.state.clicked ? "up trend" : "down trend"} >Trending</h2>
                     <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
                   </div>
-                  <LandingList show={false} main={true} data={this.state.clicked ? this.state.search : this.state.trending} popup={this.popup} similar={this.similar}/>
+                  <div>
+                   {this.getSliced(this.state.trending, false, true, 0)}
+                   {this.getSliced(this.state.trending, false, true, 12)}
+                   </div>
+                  
                   <MovieDesc open={this.state.openMovie} popup={this.popup} similar={this.similar} data={this.state.similar} selected={this.state.selected} toggle={this.toggle}/>
                 </div>
 
@@ -378,7 +300,7 @@ class App extends React.Component {
             <div>
             <header>
               <div className="above">
-                <Link to="/" className="header"><h1>ShowBiz</h1></Link>
+                <Link to="/" className="header"><h1>FutureFlip</h1></Link>
               </div>
               <nav>
                 <Link to="/movies" className="nav" onClick={() => this.getmovies()} >Movies</Link> <Link to="/tv" className="nav">TV Shows</Link>
@@ -388,12 +310,24 @@ class App extends React.Component {
 
             <div className="genres" onClick={() => this.getTap()}>
               <h3 >Genres ↓</h3>
-              <Link to="/movies/action" onClick={() => this.action()} className={this.state.tap ? "show" : "hide"}>Action</Link>
-              <Link to="/movies/adventure" onClick={() => this.adventure()} className={this.state.tap ? "show" : "hide"}>Adventure</Link>
-              <Link to="/movies/comedy" onClick={() => this.comedy()} className={this.state.tap ? "show" : "hide"}>Comedy</Link>
-              <Link to="/movies/drama" onClick={() => this.drama()} className={this.state.tap ? "show" : "hide"}>Drama</Link>
-              <Link to="/movies/family" onClick={() => this.family()} className={this.state.tap ? "show" : "hide"}>Family</Link>
-              <Link to="/movies/romance" onClick={() => this.romance()} className={this.state.tap ? "show" : "hide"}>Romance</Link>
+              <Link to="/movies/action" onClick={() => {
+                this.getClosed()
+                this.getGenres(28)}} className={this.state.tap ? "show" : "hide"}>Action</Link>
+              <Link to="/movies/adventure" onClick={() => {
+                this.getClosed()
+                this.getGenres(12)}} className={this.state.tap ? "show" : "hide"}>Adventure</Link>
+              <Link to="/movies/comedy" onClick={() => {
+                this.getClosed()
+                this.getGenres(35)}} className={this.state.tap ? "show" : "hide"}>Comedy</Link>
+              <Link to="/movies/drama" onClick={() => {
+                this.getClosed()
+                this.getGenres(18)}} className={this.state.tap ? "show" : "hide"}>Drama</Link>
+              <Link to="/movies/family" onClick={() => {
+                this.getClosed()
+                this.getGenres(10751)}} className={this.state.tap ? "show" : "hide"}>Family</Link>
+              <Link to="/movies/romance" onClick={() => {
+                this.getClosed()
+                this.getGenres(10749)}} className={this.state.tap ? "show" : "hide"}>Romance</Link>
             </div>
             </div>
             )} />
@@ -413,29 +347,77 @@ class App extends React.Component {
             </div>
           )}/>
 
-          <Route path="/movies/action" render={props=> (            
-            this.action()
-          )}/>
+          <Route path="/movies/action" render={props => (
+            <div className="main"> 
+              <input type="text" placeholder="Search Movies" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
+              <div id="top">
+                <h1 className={this.state.clicked ? "up" : "down"} >Action Movies</h1>
+                <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
+              </div>
+              <MoviesList main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup} similar={this.similar}/>
+              <MovieDesc open={this.state.openMovie} popup={this.popup} similar={this.similar} data={this.state.similar} selected={this.state.selected} toggle={this.toggle}/>
+              <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
+            </div>)}/>
 
-          <Route path="/movies/adventure" render={props=> (            
-            this.adventure()
-          )}/>
+          <Route path="/movies/adventure" render={props => (
+            <div className="main"> 
+              <input type="text" placeholder="Search Movies" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
+              <div id="top">
+                <h1 className={this.state.clicked ? "up" : "down"} >Adventure Movies</h1>
+                <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
+              </div>
+              <MoviesList main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup} similar={this.similar}/>
+              <MovieDesc open={this.state.openMovie} popup={this.popup} similar={this.similar} data={this.state.similar} selected={this.state.selected} toggle={this.toggle}/>
+              <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
+            </div>)}/>
 
-          <Route path="/movies/comedy" render={props=> (            
-            this.comedy()
-          )}/>
+          <Route path="/movies/comedy" render={props => (
+            <div className="main"> 
+              <input type="text" placeholder="Search Movies" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
+              <div id="top">
+                <h1 className={this.state.clicked ? "up" : "down"} >Comedy Movies</h1>
+                <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
+              </div>
+              <MoviesList main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup} similar={this.similar}/>
+              <MovieDesc open={this.state.openMovie} popup={this.popup} similar={this.similar} data={this.state.similar} selected={this.state.selected} toggle={this.toggle}/>
+              <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
+            </div>)}/>
 
-          <Route path="/movies/drama" render={props=> (            
-            this.drama()
-          )}/>
+          <Route path="/movies/drama" render={props => (
+            <div className="main"> 
+              <input type="text" placeholder="Search Movies" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
+              <div id="top">
+                <h1 className={this.state.clicked ? "up" : "down"} >Drama Movies</h1>
+                <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
+              </div>
+              <MoviesList main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup} similar={this.similar}/>
+              <MovieDesc open={this.state.openMovie} popup={this.popup} similar={this.similar} data={this.state.similar} selected={this.state.selected} toggle={this.toggle}/>
+              <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
+            </div>)}/>
 
-          <Route path="/movies/family" render={props=> (            
-            this.family()
-          )}/>
+          <Route path="/movies/family" render={props => (
+            <div className="main"> 
+              <input type="text" placeholder="Search Movies" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
+              <div id="top">
+                <h1 className={this.state.clicked ? "up" : "down"} >Family Movies</h1>
+                <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
+              </div>
+              <MoviesList main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup} similar={this.similar}/>
+              <MovieDesc open={this.state.openMovie} popup={this.popup} similar={this.similar} data={this.state.similar} selected={this.state.selected} toggle={this.toggle}/>
+              <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
+            </div>)}/>
 
-          <Route path="/movies/romance" render={props=> (            
-            this.romance()
-          )}/>
+          <Route path="/movies/romance" render={props => (
+            <div className="main"> 
+              <input type="text" placeholder="Search Movies" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
+              <div id="top">
+                <h1 className={this.state.clicked ? "up" : "down"} >Romance Movies</h1>
+                <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
+              </div>
+              <MoviesList main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup} similar={this.similar}/>
+              <MovieDesc open={this.state.openMovie} popup={this.popup} similar={this.similar} data={this.state.similar} selected={this.state.selected} toggle={this.toggle}/>
+              <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
+            </div>)}/>
 
           <Route path="/tv" component={() => <MainTv getmovies={this.getmovies}/>} />
 

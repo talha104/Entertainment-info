@@ -90,7 +90,8 @@ class Latest extends React.Component {
   getClicked = () => {
     this.setState({
       clicked: !this.state.clicked,
-      open: false
+      open: false,
+      search:[]
     })
   }
 
@@ -112,8 +113,15 @@ class Latest extends React.Component {
     })
   }
 
+  getClosed = () => {
+    this.setState({
+      clicked: false,
+      search: []
+    })
+  }
+
   getGenres = genres => {
-    axios.get(`https://api.themoviedb.org/3/discover/tv?api_key=92036cd40c0e1112f1d9e6dab2c4a657&language=en-US&sort_by=popularity.desc&with_genres=${this.state.gcode}`)
+    axios.get(`https://api.themoviedb.org/3/discover/tv?api_key=92036cd40c0e1112f1d9e6dab2c4a657&language=en-US&sort_by=popularity.desc&with_genres=${genres}&page=1`)
     .then( response => {
       this.setState({
         genres: response.data.results,
@@ -139,102 +147,6 @@ class Latest extends React.Component {
       })
   }
 
-  action = () => {
-    this.getGenres(10759)
-    return (
-      <div className="main">
-        <input type="text" placeholder="Search TV Shows" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
-        <div id="top">
-          <h1 className={this.state.clicked ? "up" : "down"} >Action TV Shows</h1>
-          <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
-        </div>
-        <TvList getcast={this.getcast} main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup}/>
-        <TvDesc open={this.state.open} selected={this.state.selected} cast={this.state.cast} toggle={this.toggle}/>
-        <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
-      </div>
-    );
-}
-
-  animation = () => {
-    this.getGenres(16)
-    return(
-      <div className="main">
-        <input type="text" placeholder="Search TV Shows" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
-        <div id="top">
-          <h1 className={this.state.clicked ? "up" : "down"} >Animated TV Shows</h1>
-          <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
-        </div>
-        <TvList getcast={this.getcast} main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup}/>
-        <TvDesc open={this.state.open} selected={this.state.selected} cast={this.state.cast} toggle={this.toggle}/>
-        <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
-      </div>
-      );
-  }
-
-  comedy = () => {
-    this.getGenres(35)
-    return(
-      <div className="main">
-        <input type="text" placeholder="Search TV Shows" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
-        <div id="top">
-          <h1 className={this.state.clicked ? "up" : "down"} >Comedy TV Shows</h1>
-          <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
-        </div>
-        <TvList getcast={this.getcast} main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup}/>
-        <TvDesc open={this.state.open} selected={this.state.selected} cast={this.state.cast} toggle={this.toggle}/>
-        <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
-      </div>
-      );
-  }
-
-  drama = () => {
-    this.getGenres(18)
-    return (
-      <div className="main">
-        <input type="text" placeholder="Search TV Shows" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
-        <div id="top">
-          <h1 className={this.state.clicked ? "up" : "down"} >Drama TV Shows</h1>
-          <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
-        </div>
-        <TvList getcast={this.getcast} main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup}/>
-        <TvDesc open={this.state.open} selected={this.state.selected} cast={this.state.cast} toggle={this.toggle}/>
-        <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
-      </div>
-      );
-  }
-
-  documentary = () => {
-    this.getGenres(99)
-    return (
-      <div className="main">
-        <input type="text" placeholder="Search TV Shows" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
-        <div id="top">
-          <h1 className={this.state.clicked ? "up" : "down"} >Documented TV Shows</h1>
-          <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
-        </div>
-        <TvList getcast={this.getcast} main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup}/>
-        <TvDesc open={this.state.open} selected={this.state.selected} cast={this.state.cast} toggle={this.toggle}/>
-        <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
-      </div>
-      );
-  }
-
-  family = () => {
-    this.getGenres(10751)
-    return (
-      <div className="main">
-        <input type="text" placeholder="Search TV Shows" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
-        <div id="top">
-          <h1 className={this.state.clicked ? "up" : "down"} >Family TV Shows</h1>
-          <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
-        </div>
-        <TvList getcast={this.getcast} main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup}/>
-        <TvDesc open={this.state.open} selected={this.state.selected} cast={this.state.cast} toggle={this.toggle}/>
-        <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
-      </div>
-      );
-  }
-
 	render() {
 		return (
 		<div>
@@ -246,7 +158,7 @@ class Latest extends React.Component {
         <div>
         <header>
           <div className="above">
-            <Link to="/" className="header"><h1>ShowBiz</h1></Link>
+            <Link to="/" className="header"><h1>FutureFlip</h1></Link>
           </div>
           <nav>
             <Link to="/movies" className="nav" onClick={() => this.props.getmovies()} >Movies</Link> <Link to="/tv" className="nav">TV Shows</Link>
@@ -256,12 +168,24 @@ class Latest extends React.Component {
 
         <div className="genres" onClick={() => this.getTap()}>
           <h3 >Genres ↓</h3>
-          <Link to="/tv/action" onClick={() => this.action()} className={this.state.tap ? "show" : "hide"}>Action</Link>
-          <Link to="/tv/animation" onClick={() => this.animation()} className={this.state.tap ? "show" : "hide"}>Animation</Link>
-          <Link to="/tv/comedy" onClick={() => this.comedy()} className={this.state.tap ? "show" : "hide"}>Comedy</Link>
-          <Link to="/tv/drama" onClick={() => this.drama()} className={this.state.tap ? "show" : "hide"}>Drama</Link>
-          <Link to="/tv/documentary" onClick={() => this.documentary()} className={this.state.tap ? "show" : "hide"}>Documentary</Link>
-          <Link to="/tv/family" onClick={() => this.family()} className={this.state.tap ? "show" : "hide"}>Family</Link>
+          <Link to="/tv/action" onClick={() => {
+            this.getClosed()
+            this.getGenres(10759)}} className={this.state.tap ? "show" : "hide"}>Action</Link>
+          <Link to="/tv/animation" onClick={() => {
+            this.getClosed()
+            this.getGenres(16)}} className={this.state.tap ? "show" : "hide"}>Animation</Link>
+          <Link to="/tv/comedy" onClick={() => {
+            this.getClosed()
+            this.getGenres(35)}} className={this.state.tap ? "show" : "hide"}>Comedy</Link>
+          <Link to="/tv/drama" onClick={() => {
+            this.getClosed()
+            this.getGenres(18)}} className={this.state.tap ? "show" : "hide"}>Drama</Link>
+          <Link to="/tv/documentary" onClick={() => {
+            this.getClosed()
+            this.getGenres(99)}} className={this.state.tap ? "show" : "hide"}>Documentary</Link>
+          <Link to="/tv/family" onClick={() => {
+            this.getClosed()
+            this.getGenres(10751)}} className={this.state.tap ? "show" : "hide"}>Family</Link>
         </div>
         </div>      
         )} />
@@ -285,28 +209,82 @@ class Latest extends React.Component {
       <Route path="/movies" component={App}/>
 
 
-      <Route path="/tv/action" render={props=> (
-        this.action()
-        )}/>
+      <Route path="/tv/action" render={props => 
+        <div className="main">
+          <input type="text" placeholder="Search TV Shows" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
+          <div id="top">
+            <h1 className={this.state.clicked ? "up" : "down"} >Action TV Shows</h1>
+            <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
+          </div>
+          <TvList getcast={this.getcast} main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup}/>
+          <TvDesc open={this.state.open} selected={this.state.selected} cast={this.state.cast} toggle={this.toggle}/>
+          <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
+        </div>
+      }/>
 
       <Route path="/tv/animation" render={props=> (
-        this.animation()
+        <div className="main">
+          <input type="text" placeholder="Search TV Shows" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
+          <div id="top">
+            <h1 className={this.state.clicked ? "up" : "down"} >Animated TV Shows</h1>
+            <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
+          </div>
+          <TvList getcast={this.getcast} main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup}/>
+          <TvDesc open={this.state.open} selected={this.state.selected} cast={this.state.cast} toggle={this.toggle}/>
+          <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
+        </div>
         )}/>
 
       <Route path="/tv/comedy" render={props=> (            
-        this.comedy()
+        <div className="main">
+          <input type="text" placeholder="Search TV Shows" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
+          <div id="top">
+            <h1 className={this.state.clicked ? "up" : "down"} >Comedy TV Shows</h1>
+            <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
+          </div>
+          <TvList getcast={this.getcast} main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup}/>
+          <TvDesc open={this.state.open} selected={this.state.selected} cast={this.state.cast} toggle={this.toggle}/>
+          <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
+        </div>
       )}/>
 
       <Route path="/tv/drama" render={props=> (            
-        this.drama()
+        <div className="main">
+          <input type="text" placeholder="Search TV Shows" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
+          <div id="top">
+            <h1 className={this.state.clicked ? "up" : "down"} >Drama TV Shows</h1>
+            <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
+          </div>
+          <TvList getcast={this.getcast} main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup}/>
+          <TvDesc open={this.state.open} selected={this.state.selected} cast={this.state.cast} toggle={this.toggle}/>
+          <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
+        </div>
       )}/>
 
       <Route path="/tv/documentary" render={props=> (            
-        this.documentary()
+        <div className="main">
+          <input type="text" placeholder="Search TV Shows" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
+          <div id="top">
+            <h1 className={this.state.clicked ? "up" : "down"} >Documented TV Shows</h1>
+            <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
+          </div>
+          <TvList getcast={this.getcast} main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup}/>
+          <TvDesc open={this.state.open} selected={this.state.selected} cast={this.state.cast} toggle={this.toggle}/>
+          <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
+        </div>
       )}/>
 
       <Route path="/tv/family" render={props=> (            
-        this.family()
+        <div className="main">
+          <input type="text" placeholder="Search TV Shows" className={this.state.clicked ? "bar down" : "bar up"} onChange={(e) => this.getSearch(e.target.value)}/>
+          <div id="top">
+            <h1 className={this.state.clicked ? "up" : "down"} >Family TV Shows</h1>
+            <h1 className={this.state.clicked ? "down sb" : "up sb"}>Search Result</h1>
+          </div>
+          <TvList getcast={this.getcast} main={true} data={this.state.clicked ? this.state.search : this.state.genres} popup={this.popup}/>
+          <TvDesc open={this.state.open} selected={this.state.selected} cast={this.state.cast} toggle={this.toggle}/>
+          <Pagination clicked={this.state.clicked} pages={this.state.pages} paginate={this.paginateGenres}/>
+        </div>
       )}/>
 
       <Route path ="/tv" render={props=> ( 
